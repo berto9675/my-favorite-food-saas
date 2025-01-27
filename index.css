@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:ital,opsz@0,14..32;1,14..32&family=Micro+5&family=Road+Rage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body .header {
+  box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2);
+  flex: 0 0 30%;
+}
+body .header .header_title {
+  font-size: 30px;
+  margin: 32px;
+}
+body .header .header_container {
+  width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+body .header .header_container #header_image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+body .main {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body .main .main_row1 {
+  flex: 0 0 100%;
+  height: 50%;
+  display: flex;
+  position: relative;
+  gap: 2rem;
+}
+body .main .main_row1 .ingredients_section {
+  min-height: 387px;
+  max-height: 100%;
+  width: 50%;
+  margin-left: 4%;
+  background-color: hsl(0, 0%, 85%);
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+body .main .main_row1 .ingredients_section .ingredients_title {
+  margin-top: 5%;
+  font-size: 40px;
+  margin-left: 40px;
+}
+body .main .main_row1 .ingredients_section .ingredients_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 3%;
+}
+body .main .main_row1 .ingredients_section .ingredients_column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body .main .main_row1 .ingredients_section .ingredients_column label {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+body .main .main_row1 .ingredients_section input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-image: url("./img/Vector 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: hsl(0, 0%, 77%);
+  width: 20.77px;
+  height: 20.77px;
+  margin-right: 18px;
+}
+body .main .main_row1 .ingredients_section input[type=checkbox]:checked {
+  background-color: #90caf9;
+}
+body .main .main_row1 .time_section {
+  width: 10%;
+  position: absolute;
+  top: 4%;
+  left: 70%;
+}
+body .main .main_row1 .time_section .time_title {
+  margin-top: 9%;
+  font-size: 40px;
+}
+body .main .main_row1 .time_section .time_preparation {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  gap: 12px;
+  margin-top: 5%;
+}
+body .main .main_row1 .time_section .time_preparation #time_preparation_icon {
+  max-width: 36px;
+  max-height: 36px;
+}
+body .main .main_row1 .time_section .time_preparation .time_preparation_total {
+  font-family: "Micro 5";
+  font-size: 45px;
+}
+body .main .main_row1 .time_section .timer_block {
+  display: flex;
+  margin: 19px 0;
+  gap: 12px;
+}
+body .main .main_row1 .time_section .timer_block .timer_schedule {
+  background-color: hsl(0, 0%, 77%);
+  width: 28px;
+  height: 25px;
+  font-family: "Francois One";
+  cursor: pointer;
+  text-align: center;
+  padding: 3px;
+}
+body .main .main_row1 .time_section .timer_count {
+  display: flex;
+  flex-direction: column;
+}
+body .main .main_row1 .time_section .timer_count .timer_column {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  gap: 12px;
+}
+body .main .main_row1 .time_section .timer_count .timer_column .timer_counter {
+  font-family: "Micro 5";
+  font-size: 45px;
+}
+body .main .main_row1 .time_section .timer_count .timer_column .timer_icon {
+  width: 36px;
+  height: 37px;
+}
+body .main .main_row1 .time_section .timer_count .timer_button {
+  position: relative;
+}
+body .main .main_row1 .time_section .timer_count .timer_button .timer_btn {
+  cursor: pointer;
+  width: 45px;
+  height: 20px;
+  border-radius: 30px;
+  position: absolute;
+  left: 110px;
+  border: none;
+  background-color: hsl(0, 0%, 77%);
+  font-family: "Road Rage";
+}
+body .main .main_row2 {
+  margin: 4%;
+  height: 50%;
+}
+body .main .main_row2 .row2_title {
+  margin-bottom: 5%;
+}
+body .main .main_row2 .wrapper_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+body .main .main_row2 .wrapper_grid .row1 {
+  width: 48%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+body .main .main_row2 .wrapper_grid .row1 .row1_number {
+  background-color: hsl(0, 0%, 77%);
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 5px;
+  font-family: "Francois One";
+  position: absolute;
+  cursor: pointer;
+  padding: 15px;
+  top: 0;
+  left: 0;
+}
+body .main .main_row2 .wrapper_grid .row1 .row1_text {
+  height: fit-content;
+  margin: 0 5%;
+  line-height: 24.41px;
+  font-size: 14px;
+  white-space: pre-line;
+}
+body .footer {
+  display: flex;
+  flex-direction: column;
+}
+body .footer .footer_division {
+  width: 100%;
+  border: 1px ridge hsl(0, 0%, 0%);
+}
+body .footer .footer_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+  align-items: center;
+}
+body .footer .footer_container .footer_credits {
+  font-size: 14px;
+  height: fit-content;
+}
+body .footer .footer_container .footer_icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.image-container {
+  display: flex;          
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;          
+  background-color: #f0f0f0; 
+}
+
+
+.styled-image {
+  width: 300px;           
+  height: auto;            
+  border: 5px solid #333; 
+  border-radius: 10px;     
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 20px;     
+  transition: transform 0.3s; 
+}
+
+
+.styled-image:hover {
+  transform: scale(1.1);   
+}
+
+

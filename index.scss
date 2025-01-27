@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:ital,opsz@0,14..32;1,14..32&family=Micro+5&family=Road+Rage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$Roboto: Roboto;
+$Micro5: "Micro 5";
+$francoisOne: "Francois One";
+$roadRage : "Road Rage";
+html {
+    font-family: $Roboto;
+    font-weight: 400;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+        .header {
+            box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.2);
+            flex: 0 0 30%;
+
+            .header_title {
+                font-size: 30px;
+                margin: 32px;
+
+            }
+
+            .header_container {
+                width: 100%;
+                flex: 0 0 100%;
+                display: flex;
+                justify-content: center;
+                
+                    #header_image {
+                        width: 300px;
+                        height: auto;
+                        object-fit: cover;
+                    }
+            }   
+
+        }
+        
+        .main {
+            flex: 0 0 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .main_row1 {
+                
+                flex: 0 0 100%;
+                height: 50%;
+                display: flex;
+                position: relative;
+                gap: 2rem;
+            
+                .ingredients_section {
+                    min-height: 387px;
+                    max-height: 100%;
+                    width: 50%;
+                    margin-left: 4%;
+                    background-color: hsla(0, 0%, 85%, 1);
+                    border-bottom-right-radius: 35px;
+                    border-bottom-left-radius: 35px;
+                    
+                    .ingredients_title {
+                        margin-top: 5%;
+                        font-size: 40px;
+                        margin-left: 40px;
+                    }
+
+                    .ingredients_block {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 5% 3%;
+                    }
+
+                    .ingredients_column {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            font-size: 30px; 
+                        }
+                    }
+
+                    input[type="checkbox"] {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        cursor: pointer;
+                        background-image:url("./img/Vector\ 1.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: hsla(0, 0%, 77%, 1);
+                        width: 20.77px;
+                        height: 20.77px;
+                        margin-right: 18px;
+                    }
+
+                    input[type="checkbox"]:checked {
+                        background-color: #90caf9;
+                    }
+                }
+                .time_section {
+                    width: 10%;
+                    position: absolute;
+                    top: 4%;
+                    left: 70%;
+
+                    .time_title {
+                        margin-top: 9%;
+                        font-size: 40px;
+                    }
+
+                    .time_preparation {
+                        display: flex;
+                        height: fit-content;
+                        align-items: center;
+                        gap: 12px;
+                        margin-top: 5%;
+
+                        #time_preparation_icon{
+                            max-width: 36px;
+                            max-height: 36px;
+                        }
+
+                        .time_preparation_total {
+                            font-family: $Micro5;
+                            font-size: 45px;
+                        }
+                    }
+
+                    .timer_block {
+                        display: flex;
+                        margin: 19px 0;
+                        gap: 12px;
+
+                        .timer_schedule {
+                            background-color: hsla(0, 0%, 77%, 1);
+                            width: 28px;
+                            height: 25px;
+                            font-family: $francoisOne;
+                            cursor: pointer;
+                            text-align: center;
+                            padding: 3px;
+                        }
+                    }
+
+                    .timer_count {
+                        display: flex;
+                        flex-direction: column;
+
+                        .timer_column {
+                            display: flex;
+                            height: fit-content;
+                            align-items: center;
+                            gap: 12px;
+
+
+                            .timer_counter {
+                                font-family: $Micro5;
+                                font-size: 45px;
+                            }
+
+                            .timer_icon {
+                                width: 36px;
+                                height: 37px
+                            }
+                        }
+
+                        .timer_button {                          
+                            position: relative;
+
+                            .timer_btn {
+                                cursor: pointer;
+                                width: 45px;
+                                height: 20px;
+                                border-radius: 30px;
+                                position: absolute;
+                                left: 110px;
+                                border: none;
+                                background-color: hsla(0, 0%, 77%, 1) ;
+                                font-family: $roadRage;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_row2 {
+                margin: 4%;
+                height: 50%;
+
+                .row2_title {
+                    margin-bottom: 5%;
+                }
+
+                .wrapper_grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    row-gap: 2rem;
+                    
+                    .row1 {
+                        width: 48%;
+                        height: auto;
+                        display: flex;
+                        position: relative;
+                        
+                        .row1_number {
+                            background-color: hsla(0, 0%, 77%, 1);
+                            min-width: 45px;
+                            min-height: 45px;
+                            border-radius: 5px;
+                            font-family: $francoisOne;
+                            position: absolute;
+                            cursor: pointer;
+                            padding: 15px;
+                            top:0;
+                            left: 0;
+                        }
+                        .row1_text {
+                            height: fit-content;
+                            margin: 0 5%;
+                            line-height: 24.41px;
+                            font-size: 14px;
+                            white-space: pre-line;
+                        }
+                    }
+
+                }
+            }
+
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+
+            .footer_division {
+                width: 100%;
+                border: 1px ridge hsla(0, 0%, 0%, 1);
+            }
+
+            .footer_container {
+
+                display: flex;
+                justify-content: space-between;
+                margin: 2%;
+                align-items: center;
+
+                .footer_credits {
+                    font-size: 14px;
+                    height: fit-content;
+                }
+                
+                .footer_icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+            }
+            
+        }
+}
